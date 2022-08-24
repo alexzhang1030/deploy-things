@@ -18,3 +18,7 @@ services:
       - "traefik.http.routers.api.rule=Host(`traefik.zzzx.tech`)"
       - "traefik.http.routers.api.tls=true"
       - "traefik.http.routers.api.tls.certresolver=le"
+
+networks:
+  default:
+    name: traefik_default
