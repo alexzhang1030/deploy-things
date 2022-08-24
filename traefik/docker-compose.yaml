@@ -16,7 +16,8 @@ services:
     env_file: .env
     labels:
       - "traefik.http.routers.api.rule=Host(`traefik.zzzx.tech`)"
-      - "traefik.http.routers.api.service=api@internal"
+      - "traefik.http.routers.your-service-name.tls=true"
+      - "traefik.http.routers.your-service-name.tls.certresolver=le"
   whoami:
     image: traefik/whoami
     labels:

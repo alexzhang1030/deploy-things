@@ -8,6 +8,8 @@ services:
     labels:
       - traefik.http.routers.test.rule=Host(`test.zzzx.tech`)
       - traefik.http.services.test.loadbalancer.server.port=80
+      - traefik.http.routers.your-service-name.tls=true
+      - traefik.http.routers.your-service-name.tls.certresolver=le
 
 networks:
   default:
