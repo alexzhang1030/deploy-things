@@ -17,3 +17,7 @@ services:
     labels:
       - "traefik.http.routers.api.rule=Host(`traefik.zzzx.tech`)"
       - "traefik.http.routers.api.service=api@internal"
+  whoami:
+    image: traefik/whoami
+    labels:
+      - "traefik.http.routers.whoami.rule=Host(`whoami.zzzx.tech`)"
