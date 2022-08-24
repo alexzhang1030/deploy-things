@@ -9,12 +9,11 @@ services:
       - './storage:/verdaccio/storage'
       - './conf:/verdaccio/conf'
       # - verdaccio:/verdaccio
-      # labels:
-      #   - traefik.http.routers.whoami.rule=Host(``)
-      #   - traefik.http.routers.whoami.tls=true
-      #   - traefik.http.routers.whoami.tls.certresolver=le
+labels:
+  - traefik.http.routers.whoami.rule=Host(``)
+  # - traefik.http.routers.whoami.tls=true
+  # - traefik.http.routers.whoami.tls.certresolver=le
 
-      # networks:
-      #   default:
-      #     external:
-      #       name: traefik_default
+networks:
+  default:
+    name: traefik_default
