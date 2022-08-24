@@ -11,8 +11,8 @@ services:
       # - verdaccio:/verdaccio
     labels:
       - traefik.http.routers.verdaccio.rule=Host(`verdaccio.zzzx.tech`)
-      - traefik.http.routers.your-service-name.tls=true
-      - traefik.http.routers.your-service-name.tls.certresolver=le
+      - traefik.http.routers.verdaccio.tls=true
+      - traefik.http.routers.verdaccio.tls.certresolver=le
 
 networks:
   default:
