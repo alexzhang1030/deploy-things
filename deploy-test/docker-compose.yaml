@@ -7,8 +7,7 @@ services:
       - 8080:80
     labels:
       - "traefik.http.routers.test.rule=Host(`test.zzzx.tech`)"
-      # - "traefik.http.routers.api.service=api@internal"
-
+      - "traefik.http.routers.api.service=api@internal"
       # networks:
       #   default:
       #     name: traefik_default
