@@ -9,10 +9,8 @@ services:
       - './storage:/verdaccio/storage'
       - './conf:/verdaccio/conf'
       # - verdaccio:/verdaccio
-labels:
-  - traefik.http.routers.verdaccio.rule=Host(`verdaccio.zzzx.tech`)
-  # - traefik.http.routers.whoami.tls=true
-  # - traefik.http.routers.whoami.tls.certresolver=le
+    labels:
+      - traefik.http.routers.verdaccio.rule=Host(`verdaccio.zzzx.tech`)
 
 networks:
   default:
