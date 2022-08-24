@@ -15,7 +15,7 @@ services:
     container_name: traefik
     env_file: .env
     labels:
-      - "traefik.http.routers.api.rule=Host(`traefik.zzzx.tech`)"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.zzzx.tech`)"
       # - "traefik.http.routers.api.service=api@internal"
 
       # networks:

@@ -6,7 +6,7 @@ services:
     ports:
       - 8080:80
     labels:
-      - "traefik.http.routers.api.rule=Host(`test.zzzx.tech`)"
+      - "traefik.http.routers.test.rule=Host(`test.zzzx.tech`)"
       # - "traefik.http.routers.api.service=api@internal"
 
       # networks:
